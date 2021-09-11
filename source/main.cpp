@@ -9,7 +9,7 @@ using namespace std;
 double euclidean_distance(vector<int>, vector<int>);
 
 // Variables globales
-int dimensions = 2;
+int dimensions = 2; // Dimensiones de cada punto cambiar por 2, 5, 10, 15, 20, 25
 
 int main() {
 
