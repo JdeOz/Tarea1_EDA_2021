@@ -10,7 +10,7 @@ using namespace std;
 double euclidean_distance(vector<int>, vector<int>);
 
 // Variables globales
-int dimensions = 2; // Dimensiones de cada punto cambiar por 2, 5, 10, 15, 20, 25
+int dimensions = 2; // Dimensiones de cada punto, cambiar por 2, 5, 10, 15, 20, 25
 
 int main() {
 
@@ -83,7 +83,8 @@ int main() {
 
     // Imprimir resultado
 
-    cout << "Demoro: " << duration << "ms"<< endl;
+    cout << "Test con " << dimensions << " dimensiones" << endl << endl;
+    cout << "Demoro: " << duration << "ms"<< endl << endl;
     cout << "Valor\tCantidad" << endl;
     for (int i = 0; i < 11; ++i) {
         cout << (double) i / 10 << "\t" << frec[i] << endl;
