@@ -1,10 +1,14 @@
-# Tarea 1 EDA
+# Tarea 1 EDA: Maldición de la dimensionalidad
 
-Presentación de la primera tarea de Estrucuras de Datos Avanzadas.
+Presentación de la primera tarea de Estructuras de Datos Avanzadas sobre la maldición de la dimensionalidad.
+### Instrucciones
+
+1. **Para cambiar el número de dimensiones de los datos, modifique la variable "dimensions" que está en la línea 13.**
 
 ## Gráficas Resultantes 🚀
 
 ### Datos de 2 Dimensiones
+⌛ Demoró: 62ms
 
 | Valor | Cantidad |
 | :---: | :---: |
@@ -24,6 +28,8 @@ Presentación de la primera tarea de Estrucuras de Datos Avanzadas.
 <img src="https://user-images.githubusercontent.com/85593827/133170292-61af68fe-0b89-4353-9119-4769631cf0b2.png" width="500">
 
 ### Datos de 5 Dimensiones
+⌛ Demoró: 79ms
+
 | Valor | Cantidad |
 | :---: | :---: |
 |0|54|
@@ -41,6 +47,8 @@ Presentación de la primera tarea de Estrucuras de Datos Avanzadas.
 <img src="https://user-images.githubusercontent.com/85593827/133180619-48e2bc52-bc9f-4048-9dce-ca5bc293696f.png" width="500">
 
 ### Datos de 10 Dimensiones
+⌛ Demoró: 95ms
+
 | Valor | Cantidad |
 | :---: | :---: |
 |0|16|
@@ -58,6 +66,8 @@ Presentación de la primera tarea de Estrucuras de Datos Avanzadas.
 <img src="https://user-images.githubusercontent.com/85593827/133182312-ba7153b8-2aa2-4cff-9a05-19fd06f5aa99.png" width="500">
 
 ### Datos de 15 Dimensiones
+⌛ Demoró: 124ms
+
 | Valor | Cantidad |
 | :---: | :---: |
 |0|22|
@@ -75,6 +85,8 @@ Presentación de la primera tarea de Estrucuras de Datos Avanzadas.
 <img src="https://user-images.githubusercontent.com/85593827/133182313-5488918f-7120-4515-87ee-5e9a87b4c4c7.png" width="500">
 
 ### Datos de 20 Dimensiones
+⌛ Demoró: 156ms
+
 | Valor | Cantidad |
 | :---: | :---: |
 |0|28|
@@ -92,6 +104,8 @@ Presentación de la primera tarea de Estrucuras de Datos Avanzadas.
 <img src="https://user-images.githubusercontent.com/85593827/133182314-3f71d13d-a8b0-437e-b7f5-b3c290347537.png" width="500">
 
 ### Datos de 25 Dimensiones
+⌛ Demoró: 171ms
+
 | Valor | Cantidad |
 | :---: | :---: |
 |0|8|
