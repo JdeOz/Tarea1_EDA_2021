@@ -2,6 +2,7 @@
 #include <random>
 #include <vector>
 #include <cmath>
+#include <chrono>
 
 using namespace std;
 
@@ -13,7 +14,6 @@ int dimensions = 2; // Dimensiones de cada punto cambiar por 2, 5, 10, 15, 20, 2
 
 int main() {
 
-
     // Inicialización de las variables y la uniform int distribution
 
     random_device rd;       // Semilla del aleatorio
@@ -23,6 +23,12 @@ int main() {
     int n_points = 20000;   // Número de puntos generados
     uniform_int_distribution<> distrib(rand_min, rand_max); // Generador de aleatorios
     vector<vector<int>> mat_points; // Vector de los puntos generados
+
+
+    // Inicio del cronometro
+
+    std::chrono::time_point<std::chrono::high_resolution_clock> start, end;
+    start = std::chrono::high_resolution_clock::now();
 
 
     // Generador de los puntos aleatorios con n dimensiones
@@ -67,12 +73,24 @@ int main() {
         frec[(int) (percentage * 10)]++;
     }
 
+
+    // Fin del cronómetro
+
+    end = std::chrono::high_resolution_clock::now();
+    int64_t duration = std::chrono::duration_cast<std::chrono::milliseconds>(
+            end - start).count(); // duration is holding the elapsed time
+
+
     // Imprimir resultado
 
+    cout << "Demoro: " << duration << "ms"<< endl;
+    cout << "Valor\tCantidad" << endl;
     for (int i = 0; i < 11; ++i) {
         cout << (double) i / 10 << "\t" << frec[i] << endl;
     }
+    return 0;
 }
+// Fin del main
 
 //Función distancia Euclidiana
 double euclidean_distance(vector<int> selector, vector<int> temp) {
